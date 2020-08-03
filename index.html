@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smashing Mag Clone</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <!-- Gilbert -->
-    <nav>
-      <ul>
-        <li>
-          <div>Logo</div>
-        </li>
-      </ul>
-    </nav>
+    <header class="header flex">
+      <nav class="nav flex">
+        <a href="index.html" class="logo">
+          <img src="https://d33wubrfki0l68.cloudfront.net/81fa290218cedc39d32be7b1f1aba58a25829ebe/0a05f/images/logo--full.svg" alt="Smashing Mag logo">
+        </a>
+        <ul class="nav-links flex">
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a class="menu-link" href="#">Menu &nbsp;<img style="width:20px" src="https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg" alt="cat"></a></li>
+
+           
+        </ul>
+      </nav>
+      <section class="search-input flex">
+        <label for="search"></label>
+          <span class="material-icons search-icon">search</span>
+         <input type="search" id="search" placeholder="Search articles...">
+  
+      </section>
     <main>
       <!-- Damilola -->
       <section class="latest-articles"></section>
