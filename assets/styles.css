@@ -1,7 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700&display=swap');
+
 /* CSS Reset */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Recursive', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Latest Articles Section */
+
+.arrow-forward {
+  color: #fff;
+  margin-top: 70px;
+}
+
+.latest-articles {
+  display: grid;
+  grid: 'article article'
+        'article article';
+  position: relative;
+  width: 100%;
+}
+
+.sticky-note {
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 30vw;
+  margin-left: 35vw;
+}
+
+.sticky-note strong {
+  background-color: #fff;
+  padding: 10px;
+  line-height: 60px;
+}
+
+.latest-article {
+  min-height: 58vh;
+  padding: 50px;
+  color: #fff;
+  width: 100%;
+}
+
+.latest-article h1 {
+  width: 90%;
+  margin-top: 30px;
+}
+
+.latest-article .tags {
+  margin-top: 40px;
+}
+
+.latest-article .tag {
+  padding-left: 30px;
+}
+
+.latest-article .tag:first-child {
+  padding-left: 0;
+}
+
+.article1 {
+  background-color: rgba(128,128,128,1.0);
+}
+
+.article2 {
+  background-color: rgba(128,128,128,0.9);
+}
+
+.article3 {
+  background-color: rgba(128,128,128,0.8);
+}
+
+.article4 {
+  background-color: rgba(128,128,128,0.7);
+}
+
+.article1, .article2 {
+  padding-top: 200px;
+}
+
+.article3, .article4 {
+  padding-top: 80px;
+}
+
+.latest-article h1 {
+  font-size: 42px;
+}
+
+.latest-article h1 span {
+  font-size: 16px;
+  position: relative;
+  top: -10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author span {
+  padding-left: 20px;
+  font-size: 21px;
+}
+
+.author img {
+  transform: rotate(-15deg);
+  width: 70px;
+  height: 70px;
+  border: solid thick #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.3s;
+  filter: grayscale();
+}
+
+.author img:hover {
+  transform: rotate(0deg);
 }
