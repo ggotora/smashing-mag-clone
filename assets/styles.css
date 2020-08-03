@@ -9,6 +9,15 @@
   --text-white: #fff;
 }
 
+body {
+  font-family: 'Recursive', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Global Styles */
 
 .flex {
@@ -40,16 +49,6 @@
   list-style: none;
   justify-content: space-around;
 
-}
-<<<<<<< HEAD
-
-body {
-  font-family: 'Recursive', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* Latest Articles Section */
@@ -165,7 +164,7 @@ a {
 .author img:hover {
   transform: rotate(0deg);
 }
-=======
+
 .nav-links a {
   text-decoration: none;
   font-size: 1.4rem;
@@ -209,4 +208,3 @@ a {
   right: 22.3%;
 
 }
->>>>>>> c7daaa633115d68b0b393264aef975e212c51078
