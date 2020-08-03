@@ -10,7 +10,8 @@
 }
 
 body {
-  font-family: 'Recursive', sans-serif;
+
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -26,7 +27,8 @@ a {
 /* Header */
 .header {
   height: 90px;
-  background-color: var(--gray-scale1);
+  background-color: black;
+
 }
 .nav {
   width: 100%;
@@ -207,4 +209,132 @@ a {
   position: absolute;
   right: 22.3%;
 
+}
+
+/* latest-posts Gilbert */
+
+.latest-posts {
+  display: grid;
+  grid-template-columns: min-content repeat(4, 1fr);
+  background-color: rgb(231, 231, 231);
+}
+.post {
+  position: relative;
+  height: 100vh;
+  padding: 2rem 3rem;
+  transition: all .2s;
+  line-height: 34px;
+  font-size: 20px;
+  width: 100%;
+}
+.post h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.days {
+  font-weight: 200;
+  font-size: 14px;
+}
+.ninety-deg {
+  writing-mode: vertical-rl;
+  margin-top: 3rem;
+}
+
+.hover:hover {
+  box-shadow: -1px 6px 24px -1px rgba(0,0,0,0.75);
+  width: 100%;
+  background-color: var(--text-white);
+  z-index: 1;
+
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 40px;
+  position: absolute;
+  bottom: 25px;
+  padding: 2rem;
+}
+.arrow:hover {
+  background-color: var(--gray-scale3);
+  color: var(--text-white);
+}
+.written-by {
+  font-weight: 500;
+}
+.written-by a{
+  text-decoration: underline;
+}
+
+/* ad-section  Gilbert */
+
+.ad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.advert {
+  background-color: var(--gray-scale3);
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 3/5;
+  padding: 3rem;
+  margin: 4rem 2rem 4rem 6rem;
+  height: 80vh;
+  border-radius: 15px;
+}
+
+.advert p {
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-white);
+}
+
+.new-link {
+  font-size: 46px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--text-white)
+}
+
+/* Guides Section Gilbert */
+
+.guides {
+  display: grid;
+  grid-template-columns: min-content repeat(3, 1fr);
+  font-size: 21px;
+  line-height: 34px;
+  background-color: var(--gray-scale4);
+}
+
+.guide-card {
+  height: 100vh;
+  margin: 2rem;
+  background-color: var(--gray-scale1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.guide-card h2 {
+  margin-top: 0;
+  line-height: 56px;
+  font-size: 46px;
+  font-weight: 600;
+  color:var(--gray-scale5)
+}
+
+.guide-card a {
+  display: inline-block;
+  width: 85%;
+  background-color: var(--text-white);
+  color: var(--gray-scale4);
+  padding: 1rem ;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.guide-card a:hover {
+  color: white;
+  background-color: var(--gray-scale4);
 }
