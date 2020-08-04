@@ -15,12 +15,18 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Global Styles */
@@ -36,49 +42,6 @@ a {
 
 .rotate:hover {
   transform: rotate(0deg);
-}
-
-.guide-card a,
-.sticky-note,
-.featured,
-.featured button,
-.newsletter-section footer,
-.footer,
-.footer .container
-{
-  text-align: center;
-}
-
-.written-by a,
-.featured h1,
-.new-link,
-.featured-ad h1,
-.newsletter-section a,
-.footer .container a
-{
-  text-decoration: underline;
-}
-
-.nav,
-.featured button,
-.advert,
-.person-of-the-week,
-.featured-ad button
-{
-  align-items: center;
-}
-
-.nav,
-.logo img,
-.nav-links,
-.sticky-note,
-.post,
-.hover:hover,
-.featured,
-.featured-ad,
-.newsletter-section img
-{
-  width: 100%;
 }
 
 /* Header */
@@ -146,10 +109,6 @@ a {
   border: 1px solid var(--gray-scale1);
 }
 
-.search-input input:focus {
-  outline: none;
-}
-
 .search-icon {
   position: absolute;
   right: 22.3%;
@@ -185,7 +144,7 @@ a {
 }
 
 .latest-article h1 {
-  font-size: 44px;
+  font-size: 38px;
 }
 
 .comment {
@@ -255,7 +214,7 @@ a {
 
 .post {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 2rem 3rem;
   transition: all 0.2s;
   line-height: 34px;
@@ -298,10 +257,6 @@ a {
 
 .written-by {
   font-weight: 500;
-}
-
-.nav-links a:hover {
-  background-color: rgb(212, 208, 208);
 }
 
 /* Featured section */
@@ -385,13 +340,6 @@ a {
   top: -40px;
 }
 
-.person-of-the-week .thumbnail img {
-  width: 80%;
-  float: left;
-  border: solid 5px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
 .bio {
   width: 80%;
   float: left;
@@ -464,11 +412,6 @@ a {
   color: var(--gray-scale5);
 }
 
-.guide-card a:hover {
-  color: white;
-  background-color: var(--gray-scale4);
-}
-
 /* Newsletter Email */
 
 .newsletter-section {
@@ -480,11 +423,6 @@ a {
   border-radius: 20px;
   background-color: var(--gray-scale4);
   color: var(--text-white);
-
-}
-
-.newsletter-section header {
-
 }
 
 .newsletter-section img {
@@ -498,6 +436,7 @@ a {
 .newsletter-section input {
   border: none;
   height: 60px;
+  font-size: 24px;
 }
 
 .newsletter-section input[type="email"] {
@@ -523,6 +462,10 @@ a {
   border-radius: 15px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-input input:focus {
+  outline: none;
 }
 
 /* Footer */
@@ -573,4 +516,61 @@ ul.topics li::before {
   width: 600px;
   margin: 30px auto;
   line-height: 2em;
+}
+
+/* Combined Selectors */
+
+.guide-card a,
+.sticky-note,
+.featured,
+.featured button,
+.newsletter-section footer,
+.footer,
+.footer .container {
+  text-align: center;
+}
+
+.written-by a,
+.featured h1,
+.new-link,
+.featured-ad h1,
+.newsletter-section a,
+.footer .container a {
+  text-decoration: underline;
+}
+
+.nav,
+.featured button,
+.advert,
+.person-of-the-week,
+.featured-ad button {
+  align-items: center;
+}
+
+.nav,
+.logo img,
+.nav-links,
+.sticky-note,
+.post,
+.hover:hover,
+.featured,
+.featured-ad,
+.newsletter-section img {
+  width: 100%;
+}
+
+.person-of-the-week .thumbnail img {
+  width: 80%;
+  float: left;
+  border: solid 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background-color: rgb(212, 208, 208);
+}
+
+.guide-card a:hover {
+  color: white;
+  background-color: var(--gray-scale4);
 }
