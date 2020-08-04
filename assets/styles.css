@@ -448,3 +448,57 @@ a {
   color: white;
   background-color: var(--gray-scale4);
 }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(https://www.smashingmagazine.com/images/footer/laptop__left.svg);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: 15% 90%;
+  padding: 80px 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.footer ul.topics {
+  margin-top: 40px;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+ul.topics li {
+  padding: 5px;
+  line-height: 2em;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+ul.topics li:hover {
+  color: #000;
+}
+
+ul.topics li::before {
+  content: '* ';
+  position: relative;
+  top: 5px;
+  color: #000;
+}
+
+.footer .container {
+  width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 2em;
+}
+
+.footer .container a {
+  text-decoration: underline;
+}
