@@ -5,7 +5,7 @@
   --gray-scale2: #777;
   --gray-scale3: #555;
   --gray-scale4: #333;
-  --gray-scale5: #111;
+  --gray-scale5: #222;
   --text-white: #fff;
 }
 
@@ -38,16 +38,57 @@ a {
   transform: rotate(0deg);
 }
 
+.guide-card a,
+.sticky-note,
+.featured,
+.featured button,
+.newsletter-section footer,
+.footer,
+.footer .container
+{
+  text-align: center;
+}
+
+.written-by a,
+.featured h1,
+.new-link,
+.featured-ad h1,
+.newsletter-section a,
+.footer .container a
+{
+  text-decoration: underline;
+}
+
+.nav,
+.featured button,
+.advert,
+.person-of-the-week,
+.featured-ad button
+{
+  align-items: center;
+}
+
+.nav,
+.logo img,
+.nav-links,
+.sticky-note,
+.post,
+.hover:hover,
+.featured,
+.featured-ad,
+.newsletter-section img
+{
+  width: 100%;
+}
+
 /* Header */
 .header {
   height: 90px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--gray-scale2);
 }
 
 .nav {
-  width: 100%;
   height: 90px;
-  align-items: center;
 }
 
 .logo {
@@ -56,24 +97,22 @@ a {
 
 .logo img {
   margin-top: 40px;
-  max-width: 100%;
   line-height: 90px;
   height: 90px;
 }
 
 .nav-links {
-  width: 100%;
   list-style: none;
   justify-content: space-around;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 20px;
   padding: 0.8rem;
   border-radius: 13px;
 }
 
 .nav-links a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 20px;
   color: var(--text-white);
   padding: 0.8rem;
   border-radius: 13px;
@@ -86,7 +125,6 @@ a {
   color: var(--gray-scale4);
   padding: 1rem;
   border-radius: 5px;
-  text-align: center;
 }
 
 .menu-link {
@@ -103,7 +141,7 @@ a {
   margin-right: 2.5rem;
   height: 3rem;
   padding: 1rem 3rem;
-  font-size: 1.4rem;
+  font-size: 18px;
   border-radius: 9px;
   border: 1px solid var(--gray-scale1);
 }
@@ -126,8 +164,6 @@ a {
 .sticky-note {
   position: absolute;
   padding-top: 20px;
-  width: 100%;
-  text-align: center;
   z-index: 2;
   top: 0;
   left: 0;
@@ -135,7 +171,7 @@ a {
 
 .sticky-note strong {
   font-size: 36px;
-  background-color: #fff;
+  background-color: var(--text-white);
 }
 
 .latest-article {
@@ -145,7 +181,7 @@ a {
   min-height: 70vh;
   padding-top: 10vh;
   position: relative;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .latest-article h1 {
@@ -162,19 +198,19 @@ a {
 }
 
 .article1 {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--gray-scale3);
 }
 
 .article2 {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--gray-scale4);
 }
 
 .article3 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gray-scale5);
 }
 
 .article4 {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--gray-scale2);
 }
 
 .author {
@@ -185,7 +221,7 @@ a {
   width: 60px;
   height: 60px;
   border: solid thick #f5f5f5;
-  background-color: #fff;
+  background-color: var(--text-white);
   border-radius: 20px;
   transition: 0.3s;
   margin-right: 20px;
@@ -208,7 +244,7 @@ a {
   font-size: 48px;
 }
 
-/* latest-posts Gilbert */
+/* Latest Posts */
 
 .latest-posts {
   clear: both;
@@ -219,12 +255,11 @@ a {
 
 .post {
   position: relative;
-  height: 100vh;
+  min-height: 90vh;
   padding: 2rem 3rem;
   transition: all 0.2s;
   line-height: 34px;
   font-size: 20px;
-  width: 100%;
 }
 
 .post h2 {
@@ -244,7 +279,6 @@ a {
 
 .hover:hover {
   box-shadow: -1px 6px 24px -1px rgba(0, 0, 0, 0.75);
-  width: 100%;
   background-color: var(--text-white);
   z-index: 1;
 }
@@ -266,10 +300,6 @@ a {
   font-weight: 500;
 }
 
-.written-by a {
-  text-decoration: underline;
-}
-
 .nav-links a:hover {
   background-color: rgb(212, 208, 208);
 }
@@ -277,10 +307,8 @@ a {
 /* Featured section */
 
 .featured {
-  width: 100%;
   padding: 60px 0;
   color: #fff;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.45);
 }
 
@@ -288,7 +316,6 @@ a {
   width: 800px;
   margin: auto;
   font-size: 45px;
-  text-decoration: underline;
 }
 
 .featured p.large {
@@ -298,12 +325,10 @@ a {
 }
 
 .featured button {
-  align-items: center;
   padding: 15px 30px;
   border: 0;
   border-radius: 10px;
   margin: auto;
-  text-align: center;
 }
 
 .featured img {
@@ -311,7 +336,7 @@ a {
   margin-top: 50px;
 }
 
-/* ad-section  Gilbert */
+/* Ad Section */
 
 .ad {
   display: grid;
@@ -322,7 +347,6 @@ a {
   background-color: var(--gray-scale3);
   width: 70%;
   flex-direction: column;
-  align-items: center;
   grid-column: 3/5;
   padding: 3rem;
   margin: 4rem 2rem 4rem 6rem;
@@ -339,7 +363,6 @@ a {
 .new-link {
   font-size: 46px;
   font-weight: 600;
-  text-decoration: underline;
   color: var(--text-white);
 }
 
@@ -348,7 +371,6 @@ a {
 .person-of-the-week {
   width: 90%;
   margin: 50px auto;
-  align-items: center;
 }
 
 .person-of-the-week .thumbnail {
@@ -397,13 +419,13 @@ a {
 .featured-ad {
   clear: both;
   position: relative;
-  width: 100%;
   padding: 50px 10%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .featured-ad div {
-  width: 900px;
+  width: 70%;
+  line-height: 1.8em;
 }
 
 .featured-ad h1 {
@@ -411,13 +433,12 @@ a {
 }
 
 .featured-ad button {
-  align-items: center;
   padding: 15px 30px;
   border: 0;
   border-radius: 10px;
 }
 
-/* Guides Section Gilbert */
+/* Smashing Magazine Section */
 
 .guides {
   clear: both;
@@ -429,7 +450,6 @@ a {
 }
 
 .guide-card {
-  height: 100vh;
   margin: 2rem;
   background-color: var(--gray-scale1);
   padding: 2rem;
@@ -439,7 +459,7 @@ a {
 .guide-card h2 {
   margin-top: 0;
   line-height: 56px;
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 600;
   color: var(--gray-scale5);
 }
@@ -449,15 +469,72 @@ a {
   background-color: var(--gray-scale4);
 }
 
+/* Newsletter Email */
+
+.newsletter-section {
+  width: 50%;
+  margin: 40px auto;
+  font-size: 21px;
+  line-height: 34px;
+  padding: 4rem;
+  border-radius: 20px;
+  background-color: var(--gray-scale4);
+  color: var(--text-white);
+
+}
+
+.newsletter-section header {
+
+}
+
+.newsletter-section img {
+  filter: brightness(1);
+}
+
+.newsletter-section h2 {
+  font-size: 44px;
+}
+
+.newsletter-section input {
+  border: none;
+  height: 60px;
+}
+
+.newsletter-section input[type="email"] {
+  padding: 20px;
+  background-color: var(--text-white);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 65%;
+}
+
+.newsletter-section input[type="submit"] {
+  padding: 1rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: -5px;
+  width: 30%;
+}
+
+.newsletter-section footer {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.6em;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+
 .footer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--gray-scale3);
   background-image: url(https://www.smashingmagazine.com/images/footer/laptop__left.svg);
   background-repeat: no-repeat;
   background-size: 180px;
   background-position: 15% 90%;
   padding: 80px 50px;
   color: #fff;
-  text-align: center;
 }
 
 .footer ul {
@@ -495,10 +572,5 @@ ul.topics li::before {
 .footer .container {
   width: 600px;
   margin: 30px auto;
-  text-align: center;
   line-height: 2em;
-}
-
-.footer .container a {
-  text-decoration: underline;
 }
