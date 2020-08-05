@@ -195,8 +195,7 @@ button {
 .arrow-forward {
   position: absolute;
   left: 50px;
-  bottom: 10px;
-  margin-top: 30px;
+  bottom: 0;
 }
 
 .arrow-forward .material-icons {
@@ -206,7 +205,6 @@ button {
 /* Latest Posts */
 
 .latest-posts {
-  clear: both;
   display: grid;
   grid-template-columns: min-content repeat(4, 1fr);
   background-color: rgb(231, 231, 231);
@@ -352,7 +350,6 @@ button {
 /* Authors */
 
 .authors {
-  clear: both;
   width: 90%;
   margin: auto;
 }
@@ -363,9 +360,21 @@ button {
   padding: 50px;
 }
 
+/* Twitter CTA */
+.twitter-cta {
+  justify-content: center;
+  margin: 90px auto;
+  text-transform: uppercase;
+  border-bottom: solid thick gray;
+  width: 220px;
+}
+
+.all-guides {
+  width: 150px;
+}
+
 /* Featured Ad */
 .featured-ad {
-  clear: both;
   position: relative;
   padding: 50px 10%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -389,7 +398,6 @@ button {
 /* Smashing Magazine Section */
 
 .guides {
-  clear: both;
   display: grid;
   grid-template-columns: min-content repeat(3, 1fr);
   font-size: 21px;
@@ -526,7 +534,8 @@ ul.topics li::before {
 .featured button,
 .newsletter-section footer,
 .footer,
-.footer .container {
+.footer .container,
+.twitter-cta {
   text-align: center;
 }
 
@@ -535,7 +544,8 @@ ul.topics li::before {
 .new-link,
 .featured-ad h1,
 .newsletter-section a,
-.footer .container a {
+.footer .container a
+{
   text-decoration: underline;
 }
 
@@ -543,7 +553,8 @@ ul.topics li::before {
 .featured button,
 .advert,
 .person-of-the-week,
-.featured-ad button {
+.featured-ad button,
+.twitter-cta {
   align-items: center;
 }
 
@@ -557,6 +568,14 @@ ul.topics li::before {
 .featured-ad,
 .newsletter-section img {
   width: 100%;
+}
+
+.latest-posts,
+.authors,
+.twitter-cta,
+.featured-ad,
+.guides {
+  clear: both;
 }
 
 .person-of-the-week .thumbnail img {
