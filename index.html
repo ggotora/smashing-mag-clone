@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smashing Mag Clone</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="header flex">
+      <nav class="nav flex">
+        <a href="index.html" class="logo">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/81fa290218cedc39d32be7b1f1aba58a25829ebe/0a05f/images/logo--full.svg"
+            alt="Smashing Mag logo"
+          />
+        </a>
+        <ul class="nav-links flex">
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li>
+            <a class="menu-link" href="#"
+              >Menu &nbsp;<img
+                src="https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg"
+                alt="cat"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="search-input flex">
+        <label for="search"></label>
+        <span class="material-icons search-icon">search</span>
+        <input type="search" id="search" placeholder="Search articles..." />
+      </section>
+    </header>
+    <main>
+
+      <!-- Latest Articles -->
+      <section class="latest-articles">
+        <div class="sticky-note">
+          <strong>Don’t Miss These latest</strong><br />
+          <strong>Articles</strong>
+        </div>
+        <a href="#">
+          <article class="latest-article article1">
+            <p class="author flex">
+              <img
+                class="rotate"
+                src="https://www.gravatar.com/avatar/7cf07a4fa60d4aa7bb31ebdbe0b4753d?s=400&d=mm&r=g"
+                alt="Nicole"
+              />
+              <span> <strong>Nicole Lazarecic</strong> <em>wrote</em> </span>
+            </p>
+            <h1>
+              <strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </strong>
+              <span class="comment">
+                <span class="material-icons">mode_comment</span>&nbsp;1 comment
+              </span>
+            </h1>
+            <p class="tags">
+              <span class="tag"><strong>Sketch</strong> <sup>30</sup></span>
+              <span class="tag"><strong>Workflow</strong> <sup>328</sup></span>
+              <span class="tag"><strong>Design</strong> <sup>446</sup></span>
+            </p>
+            <p class="arrow-forward">
+              <span class="material-icons">arrow_right_alt</span>
+            </p>
+          </article>
+        </a>
+        <a href="#">
+          <article class="latest-article article2">
+            <p class="author flex">
+              <img
+                class="rotate"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27cf2125-1ccc-4a49-9fbd-62b297a721c3/cosima-mielke-200px.png"
+                alt="Nicole"
+              />
+              <span> <strong>Nicole Lazarecic</strong> <em>wrote</em> </span>
+            </p>
+            <h1>
+              <strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </strong>
+              <span class="comment">
+                <span class="material-icons">mode_comment</span>&nbsp; 1 comment
+              </span>
+            </h1>
+            <p class="tags">
+              <span class="tag"><strong>Sketch</strong> <sup>30</sup></span>
+              <span class="tag"><strong>Workflow</strong> <sup>328</sup></span>
+              <span class="tag"><strong>Design</strong> <sup>446</sup></span>
+            </p>
+            <p class="arrow-forward">
+              <span class="material-icons">arrow_right_alt</span>
+            </p>
+          </article>
+        </a>
+        <a href="#">
+          <article class="latest-article article3">
+            <p class="author flex">
+              <img
+                class="rotate"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/adfca45e-9cdb-44d3-9f69-908a73b31890/uri-paz-200x200-opt.png"
+                alt="Uri Paz"
+              />
+              <span> <strong>Uri Paz</strong> <em>wrote</em> </span>
+            </p>
+            <h1>
+              <strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </strong>
+              <span class="comment">
+                <span class="material-icons">mode_comment</span>&nbsp; 3
+                comments
+              </span>
+            </h1>
+            <p class="tags">
+              <span class="tag"><strong>Sketch</strong> <sup>30</sup></span>
+              <span class="tag"><strong>Workflow</strong> <sup>328</sup></span>
+              <span class="tag"><strong>Design</strong> <sup>446</sup></span>
+            </p>
+            <p class="arrow-forward">
+              <span class="material-icons">arrow_right_alt</span>
+            </p>
+          </article>
+        </a>
+        <a href="#">
+          <article class="latest-article article4">
+            <p class="author flex">
+              <img
+                class="rotate"
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/52f04b61-6dae-48b9-b4d3-126bef4e4e73/blessing-krofegha-200x200.jpg"
+                alt="Blessing Krofegba"
+              />
+              <span> <strong>Blessing Krofegba</strong> <em>wrote</em> </span>
+            </p>
+            <h1>
+              <strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </strong>
+              <span class="comment">
+                <span class="material-icons">mode_comment</span>&nbsp; Leave a
+                comment
+              </span>
+            </h1>
+            <p class="tags">
+              <span class="tag"><strong>Sketch</strong> <sup>30</sup></span>
+              <span class="tag"><strong>Workflow</strong> <sup>328</sup></span>
+              <span class="tag"><strong>Design</strong> <sup>446</sup></span>
+            </p>
+            <p class="arrow-forward">
+              <span class="material-icons">arrow_right_alt</span>
+            </p>
+          </article>
+        </a>
+      </section>
+
+      <!-- Latest Posts -->
+      <section class="latest-posts">
+        <p class="ninety-deg">---LATEST POSTS</p>
+        <article class="post hover">
+          <p class="days">6 Days To Go</p>
+          <h2>
+            Understanding Client-Side GraphQl With Apollo-Client In React Apps
+          </h2>
+          <p class="written-by">by <a href="#">Blessing Krofegba</a></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            impedit dicta ratione minima adipisci.
+          </p>
+          <a href="#" class="arrow">→ </a>
+        </article>
+        <article class="post hover">
+          <p class="days">6 Days To Go</p>
+          <h2>
+            Understanding Client-Side GraphQl With Apollo-Client In React Apps
+          </h2>
+          <p class="written-by">by <a href="#">Blessing Krofegba</a></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            temporibus error ad facilis officia nulla inventore est unde odio
+            quidem!
+          </p>
+          <a href="#" class="arrow">→ </a>
+        </article>
+        <article class="post hover">
+          <p class="days">6 Days To Go</p>
+          <h2>
+            Understanding Client-Side GraphQl With Apollo-Client In React Apps
+          </h2>
+          <p class="written-by">by <a href="#">Lorem, ipsum.</a></p>
+          <p>
+            nctio omnis eligendi magni, voluptatibus optio illo,consequatur
+            ipsum facilis ea!
+          </p>
+          <a href="#" class="arrow">→</a>
+        </article>
+        <article class="post"></article>
+      </section>
+        <!-- smashing members -->
+        <section class="ad">
+          <section class="smashing-advert flex">
+            <img
+              src="https://www.smashingmagazine.com/images/smashing-cat/singing-barista.svg"
+              loading="lazy"
+              alt="Smashing Cat filming for Smashing TV."
+            />
+            <a href="#" class="new-link">1,651 Smashing Members </a>
+            <p>
+              A channel where seasoned developers show how they design, build,
+              work and play. Coming up next: Getting Projects Out The Door Faster
+              And Less Painful with Kristina Podnar (Aug 6).
+            </p>
+          </section>
+          <article class="post hover">
+            <p class="days">6 Days To Go</p>
+            <h2>
+              Understanding Client-Side GraphQl With Apollo-Client In React Apps
+            </h2>
+            <p class="written-by">by <a href="#">Blessing Krofegba</a></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              temporibus error ad facilis officia...
+            </p>
+            <a href="#" class="arrow">→ </a>
+          </article>
+          <article class="post hover">
+            <p class="days">6 Days To Go</p>
+            <h2>
+              Understanding Client-Side GraphQl With Apollo-Client In React Apps
+            </h2>
+            <p class="written-by">by <a href="#">Lorem, ipsum.</a></p>
+            <p>
+              nctio omnis eligendi magni, voluptatibus optio illo,consequatur
+              ipsum facilis ea!
+            </p>
+            <a href="#" class="arrow">→</a>
+          </article>
+
+        </section>
+
+
+      <section class="ad">
+        <article class="post hover">
+          <p class="days">6 Days To Go</p>
+          <h2>
+            Understanding Client-Side GraphQl With Apollo-Client In React Apps
+          </h2>
+          <p class="written-by">by <a href="#">Blessing Krofegba</a></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            temporibus error ad facilis officia...
+          </p>
+          <a href="#" class="arrow">→ </a>
+        </article>
+        <article class="post hover">
+          <p class="days">6 Days To Go</p>
+          <h2>
+            Understanding Client-Side GraphQl With Apollo-Client In React Apps
+          </h2>
+          <p class="written-by">by <a href="#">Lorem, ipsum.</a></p>
+          <p>
+            nctio omnis eligendi magni, voluptatibus optio illo,consequatur
+            ipsum facilis ea!
+          </p>
+          <a href="#" class="arrow">→</a>
+        </article>
+        <section class="advert smashing-advert  flex">
+          <img
+            src="https://www.smashingmagazine.com/images/smashing-cat/cat-smashing-tv-2.svg"
+            loading="lazy"
+            width="258"
+            height="290"
+            alt="Smashing Cat filming for Smashing TV."
+          />
+          <a href="#" class="new-link">New on Smashing TV</a>
+          <p>
+            A channel where seasoned developers show how they design, build,
+            work and play. Coming up next: Getting Projects Out The Door Faster
+            And Less Painful with Kristina Podnar (Aug 6).
+          </p>
+        </section>
+      </section>
+
+      <!-- Featured Ad -->
+      <section class="featured">
+        <p>JUNE 2020 • SHIPPING NOW</p>
+        <h1>Meet “Click!”: Encourage Clicks Without Shady Tricks</h1>
+        <p class="large">
+          Our new book on how to <strong>boost business KPIs</strong>, build
+          trust and address doubts effectively — without alienating people along
+          the way. By Paul Boag.
+        </p>
+        <button type="button" class="flex">
+          Jump to table of contents&nbsp;
+          <span class="material-icons">arrow_right_alt</span>
+        </button>
+        <img
+          src="https://www.smashingmagazine.com/images/books/click__homepage-illustration.svg"
+          alt=""
+        />
+      </section>
+
+      <!-- Person of the week -->
+      <section class="person-of-the-week flex">
+        <div class="thumbnail">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c26b1346-4017-46bc-9b9e-ae3487555f9b/tejas-kumar-opt.png"
+            alt=""
+          />
+        </div>
+        <div class="bio">
+          <p class="lead">PERSON OF THE WEEK</p>
+          <p>
+            Tejas Kumar learned to code when he was eight and started his web
+            development career at the age of 15 as a Junior Web Developer for
+            the University of Qatar. Today, he lives in Berlin, where he builds
+            React applications as well as open-source design systems and
+            data-related libraries. As a Vetting Lead at G2i, he helps connect
+            React developers with organizations. Tejas loves to empower fellow
+            developers and shares his knowledge about coding as a speaker at
+            conferences and meetups. You can find him on Twitter as
+            @TejasKumar_. Thank you for everything you do for the community,
+            dear Tejas!
+          </p>
+        </div>
+      </section>
+
+      <!-- Authors -->
+      <section class="authors">
+        <div class="author flex">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8b85f52a-273b-45e2-8043-02362bac9f0c/stephen-nixon-opt.png"
+            alt=""
+          />
+          <div>
+            <p><u>Stephen Nixon</u> wrote</p>
+            <h2>Variable Fonts On Google Fonts</h2>
+            <p>
+              August 3, 2020 — How do you get the most out of variable fonts on
+              Google Fonts? Stephen Nixon wrote a stellar piece on getting a lot
+              more flexibility and performance out of a variable font.
+            </p>
+          </div>
+        </div>
+        <div class="author flex">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8b85f52a-273b-45e2-8043-02362bac9f0c/stephen-nixon-opt.png"
+            alt=""
+          />
+          <div>
+            <p><u>Stephen Nixon</u> wrote</p>
+            <h2>Variable Fonts On Google Fonts</h2>
+            <p>
+              August 3, 2020 — How do you get the most out of variable fonts on
+              Google Fonts? Stephen Nixon wrote a stellar piece on getting a lot
+              more flexibility and performance out of a variable font.
+            </p>
+          </div>
+        </div>
+        <div class="author flex">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8b85f52a-273b-45e2-8043-02362bac9f0c/stephen-nixon-opt.png"
+            alt=""
+          />
+          <div>
+            <p><u>Stephen Nixon</u> wrote</p>
+            <h2>Variable Fonts On Google Fonts</h2>
+            <p>
+              August 3, 2020 — How do you get the most out of variable fonts on
+              Google Fonts? Stephen Nixon wrote a stellar piece on getting a lot
+              more flexibility and performance out of a variable font.
+            </p>
+          </div>
+        </div>
+        <div class="author flex">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8b85f52a-273b-45e2-8043-02362bac9f0c/stephen-nixon-opt.png"
+            alt=""
+          />
+          <div>
+            <p><u>Stephen Nixon</u> wrote</p>
+            <h2>Variable Fonts On Google Fonts</h2>
+            <p>
+              August 3, 2020 — How do you get the most out of variable fonts on
+              Google Fonts? Stephen Nixon wrote a stellar piece on getting a lot
+              more flexibility and performance out of a variable font.
+            </p>
+          </div>
+        </div>
+        <div class="author flex">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8b85f52a-273b-45e2-8043-02362bac9f0c/stephen-nixon-opt.png"
+            alt=""
+          />
+          <div>
+            <p><u>Stephen Nixon</u> wrote</p>
+            <h2>Variable Fonts On Google Fonts</h2>
+            <p>
+              August 3, 2020 — How do you get the most out of variable fonts on
+              Google Fonts? Stephen Nixon wrote a stellar piece on getting a lot
+              more flexibility and performance out of a variable font.
+            </p>
+          </div>
+        </div>
+        <div class="author flex">
+          <img
+            class="rotate"
+            src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8b85f52a-273b-45e2-8043-02362bac9f0c/stephen-nixon-opt.png"
+            alt=""
+          />
+          <div>
+            <p><u>Stephen Nixon</u> wrote</p>
+            <h2>Variable Fonts On Google Fonts</h2>
+            <p>
+              August 3, 2020 — How do you get the most out of variable fonts on
+              Google Fonts? Stephen Nixon wrote a stellar piece on getting a lot
+              more flexibility and performance out of a variable font.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="twitter-cta flex">
+        More links on Twitter&nbsp;
+        <span class="material-icons">arrow_right_alt</span>
+      </section>
+
+      <!-- Featured Ad -->
+      <section class="featured-ad flex">
+        <div>
+          <p>FEATURED SMASHING BOOK</p>
+          <h1>Design Systems</h1>
+          <p class="large">
+            Meet <strong>Design Systems</strong>, a recent Smashing book in
+            which Alla Kholmatova explores how to set up an
+            <strong>effective design system</strong> to create great digital
+            products. With common traps, gotchas and lessons learned.
+          </p>
+          <button type="button" class="flex">
+            Jump to table of contents&nbsp;
+            <span class="material-icons">arrow_right_alt</span>
+          </button>
+        </div>
+        <img
+          class="rotate"
+          src="https://res.cloudinary.com/indysigner/image/upload/v1542959380/shop/design-systems-hardcover-book.png"
+          alt=""
+        />
+      </section>
+
+      <!-- Our Guides -->
+      <div class="guides-container">
+        <section class="guides">
+            <p class="ninety-deg">Our Guides</p>
+            <section class="guide-card">
+              <p>A SMASHING GUIDE TO</p>
+              <h2>JavaScript & Frameworks</h2>
+              <p>
+                React, Vue, or perhaps the lightweight Alpine.js? Whether you are an
+                experienced JavaScript developer working with one of these
+                frameworks, or just starting to learn, our authors have created some
+                tutorials for you.
+              </p>
+              <a href="#">Explore JavaScript & Frameworks</a>
+            </section>
+            <section class="guide-card">
+              <p>A SMASHING GUIDE TO</p>
+              <h2>CSS Layout</h2>
+              <p>
+                CSS Layout has been transformed over the past years. We have you
+                covered with all you need to master this new world. If you want to
+                understand the technical details, or learn how to use new CSS
+                creatively, these guides can help. Explore CSS Layout
+              </p>
+              <a href="#">Explore CSS Layout</a>
+            </section>
+
+            <section class="guide-card">
+              <p>A SMASHING GUIDE TO</p>
+              <h2>Web Perfomance</h2>
+              <p>
+                Ensuring your site loads quickly is important. The subject touches
+                almost every part of web design and development, from your choice of
+                images to the performance of your web server. In this guide we bring
+                together information that can help you build a fast site, and keep
+                it fast.
+              </p>
+              <a href="#">Explore Performance</a>
+            </section>
+            <!-- Newsletter -->
+          <section class="newsletter-section">
+            <header>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/405978e8d8d01723a49b6a17e8fe5a0168a138e4/f391c/images/events/ny20.png"
+                alt="Newsletter image"
+              />
+            </header>
+            <h2><a href="#">Email Newsletter</a></h2>
+            <p>
+              Every second Tuesday, we send an email newsletter with useful
+              techniques on front-end and UX. Subscribe and get Smart Interface
+              Design Checklists PDF in your inbox. 🔮
+            </p>
+            <form>
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Your email">
+              <input type="submit" value="Meow!">
+            </form>
+            <footer>
+              Front-end, UX and design. 2× a month.<br>
+              You can always unsubscribe with just 1 click.
+            </footer>
+          </section>
+        </section>
+      </div>
+
+    </main>
+
+    <section class="twitter-cta all-guides flex">
+      See all guides&nbsp;
+      <span class="material-icons">arrow_right_alt</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <strong>BROWSE ALL SMASHING MAGAZINE TOPICS</strong>
+      <ul class="topics">
+        <li><a href="">Accessibility</a></li>
+        <li><a href="">Android</a></li>
+        <li><a href="">Animation</a></li>
+        <li><a href="">Apps</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">Design</a></li>
+        <li><a href="">Design Patterns</a></li>
+        <li><a href="">Design Systems</a></li>
+        <li><a href="">E-Commerce</a></li>
+        <li><a href="">Freebies</a></li>
+        <li><a href="">Graphics</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">Illustrator</a></li>
+        <li><a href="">Inspiration</a></li>
+        <li><a href="">iOS</a></li>
+        <li><a href="">JavaScript</a></li>
+        <li><a href="">Mobile</a></li>
+        <li><a href="">Pattern Libraries</a></li>
+      </ul>
+      <div class="container">
+        <em>With a commitment to quality content for the design community.</em><br />
+        Founded by Vitaly Friedman and Sven Lennartz. 2006–2020.<br />
+        Smashing is proudly running on <a href="">Netlify</a>.<br />
+        Fonts by <a href="">Latinotype</a>.
+        <ul>
+          <li><a href="">Write for us</a></li>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">About us (Impressum)</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Membership login</a></li>
+          <li><a href="">Delivery times</a></li>
+          <li><a href="">Advertise</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
