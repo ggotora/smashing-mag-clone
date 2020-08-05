@@ -34,11 +34,11 @@ The sections highlighted in this clone are:
 
 👤 **Author1**
 
-- Github: [](https://github.com/ggotora)
+[https://github.com/ggotora](https://github.com/ggotora)
 
 👤 **Author2**
 
-- Github: [](https://github.com/oracleot)
+[https://github.com/oracleot](https://github.com/oracleot)
 
 ## 🤝 Contributing
 
